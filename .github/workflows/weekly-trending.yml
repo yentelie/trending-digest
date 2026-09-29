@@ -1,0 +1,38 @@
+name: Weekly trending digest
+
+on:
+  schedule:
+    - cron: "0 22 * * 0" # Sundays at 22:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-trending
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Test parser
+        run: python3 -m unittest
+
+      - name: Collect trending repositories
+        run: python3 collect.py
+
+      - name: Commit digest
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data digests README.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Add trending digest for $(date -u +%G-W%V)"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

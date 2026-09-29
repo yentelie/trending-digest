@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+  Synthetic fixture, not a captured page. Modeled on the github.com/trending
+  markup that current scrapers rely on: article.Box-row, h2 > a[href="/owner/repo"],
+  p description, itemprop="programmingLanguage", /stargazers and /forks links,
+  "Built by" avatars, and "N stars this week".
+-->
+<html lang="en">
+<head><title>Trending repositories on GitHub this week</title></head>
+<body>
+<header>
+  <a href="/features">Features</a>
+  <h2 class="sr-only"><a href="/login">Sign in</a></h2>
+</header>
+<main>
+<div class="Box">
+  <div class="Box-header"><a href="/trending?since=weekly" class="selected">This week</a></div>
+  <div data-hpc>
+
+<article class="Box-row">
+  <div class="float-right d-flex">
+    <a href="/login?return_to=%2Facme%2Frocket" rel="nofollow" class="btn-sm btn">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" width="16"><path d="M8 .25"></path></svg>
+      Star
+    </a>
+  </div>
+  <h2 class="h3 lh-condensed">
+    <a data-hydro-click="{&quot;event_type&quot;:&quot;explore.click&quot;,&quot;payload&quot;:{&quot;url&quot;:&quot;https://github.com/acme/rocket&quot;}}" data-hydro-click-hmac="abc123" href="/acme/rocket" data-view-component="true" class="Link">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" width="16" class="octicon octicon-repo mr-1 color-fg-muted"><path d="M2 2.5"></path></svg>
+      <span data-view-component="true" class="text-normal">
+        acme /
+</span>
+      rocket
+</a>  </h2>
+
+  <p class="col-9 color-fg-muted my-1 tmp-pr-4">
+    Fast &amp; small build tool | zero config
+  </p>
+
+  <div class="f6 color-fg-muted mt-2">
+      <span class="d-inline-block ml-0 mr-3">
+        <span class="repo-language-color" style="background-color: #3572A5"></span>
+        <span itemprop="programmingLanguage">Python</span>
+      </span>
+
+      <a href="/acme/rocket/stargazers" data-view-component="true" class="Link Link--muted d-inline-block mr-3">
+        <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16" width="16" class="octicon octicon-star"><path d="M8 .25"></path></svg>
+        38,110
+</a>
+      <a href="/acme/rocket/forks" data-view-component="true" class="Link Link--muted d-inline-block mr-3">
+        <svg aria-label="fork" role="img" height="16" viewBox="0 0 16 16" width="16" class="octicon octicon-repo-forked"><path d="M5 5.372"></path></svg>
+        5,487
+</a>
+      <span data-view-component="true" class="d-inline-block mr-3">
+        Built by
+          <a class="d-inline-block" data-hovercard-type="user" href="/alice"><img class="avatar mb-1 avatar-user" src="https://avatars.githubusercontent.com/u/1?s=40&amp;v=4" width="20" height="20" alt="@alice" /></a>
+          <a class="d-inline-block" data-hovercard-type="user" href="/bob"><img class="avatar mb-1 avatar-user" src="https://avatars.githubusercontent.com/u/2?s=40&amp;v=4" width="20" height="20" alt="@bob" /></a>
+      </span>
+
+      <span class="d-inline-block float-sm-right">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" width="16" class="octicon octicon-star"><path d="M8 .25"></path></svg>
+        2,381 stars this week
+      </span>
+  </div>
+</article>
+
+<article class="Box-row">
+  <div class="float-right d-flex">
+    <a href="/login?return_to=%2Fsolo%2Fquiet-lib" rel="nofollow" class="btn-sm btn">Star</a>
+  </div>
+  <h2 class="h3 lh-condensed">
+    <a href="/solo/quiet-lib" data-view-component="true" class="Link">
+      <span data-view-component="true" class="text-normal">
+        solo /
+</span>
+      quiet-lib
+</a>  </h2>
+
+  <div class="f6 color-fg-muted mt-2">
+      <a href="/solo/quiet-lib/stargazers" data-view-component="true" class="Link Link--muted d-inline-block mr-3">
+        <svg aria-label="star" role="img" height="16" viewBox="0 0 16 16" width="16"><path d="M8 .25"></path></svg>
+        7
+</a>
+      <a href="/solo/quiet-lib/network/members.quiet-lib" data-view-component="true" class="Link Link--muted d-inline-block mr-3">
+        <svg aria-label="fork" role="img" height="16" viewBox="0 0 16 16" width="16"><path d="M5 5.372"></path></svg>
+        0
+</a>
+      <span class="d-inline-block float-sm-right">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" width="16"><path d="M8 .25"></path></svg>
+        1 star this week
+      </span>
+  </div>
+</article>
+
+<article class="Box-row">
+  <h2 class="h3 lh-condensed">
+    <a href="/big-org/agent.kit" data-view-component="true" class="Link">
+      <span data-view-component="true" class="text-normal">
+        big-org /
+</span>
+      agent.kit
+</a>  </h2>
+
+  <p class="col-9 color-fg-muted my-1 tmp-pr-4">
+    <g-emoji class="g-emoji" alias="rocket">&#x1F680;</g-emoji> Agents that ship
+  </p>
+
+  <div class="f6 color-fg-muted mt-2">
+      <span class="d-inline-block ml-0 mr-3">
+        <span class="repo-language-color" style="background-color: #3178c6"></span>
+        <span itemprop="programmingLanguage">TypeScript</span>
+      </span>
+      <a href="/big-org/agent.kit/stargazers" data-view-component="true" class="Link Link--muted d-inline-block mr-3">
+        93,161
+</a>
+      <a href="/big-org/agent.kit/forks" data-view-component="true" class="Link Link--muted d-inline-block mr-3">
+        15,919
+</a>
+      <span class="d-inline-block float-sm-right">
+        10,518 stars this week
+      </span>
+  </div>
+</article>
+
+  </div>
+</div>
+</main>
+</body>
+</html>
