@@ -1,6 +1,6 @@
 {
   "week": "2026-W40",
-  "collected_at": "2026-09-29T04:26:55Z",
+  "collected_at": "2026-09-29T04:36:20Z",
   "source": "https://github.com/trending?since=weekly",
   "repositories": [
     {
@@ -26,8 +26,8 @@
       "url": "https://github.com/paperclipai/paperclip",
       "description": "The open-source app everyone uses to manage agents at work",
       "language": "TypeScript",
-      "stars": 93166,
-      "forks": 15919,
+      "stars": 93178,
+      "forks": 15920,
       "stars_this_week": 10518,
       "built_by": [
         "cryppadotta",
@@ -43,7 +43,7 @@
       "url": "https://github.com/vectorize-io/hindsight",
       "description": "Hindsight: Agent Memory That Learns",
       "language": "Python",
-      "stars": 41303,
+      "stars": 41311,
       "forks": 5568,
       "stars_this_week": 15537,
       "built_by": [
@@ -60,7 +60,7 @@
       "url": "https://github.com/cloudflare/security-audit-skill",
       "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
       "language": "JavaScript",
-      "stars": 22828,
+      "stars": 22829,
       "forks": 1329,
       "stars_this_week": 3962,
       "built_by": [
@@ -76,7 +76,7 @@
       "description": "CLI tool for configuring and monitoring Claude Code",
       "language": "Python",
       "stars": 32097,
-      "forks": 3654,
+      "forks": 3653,
       "stars_this_week": 1200,
       "built_by": [
         "davila7",
@@ -92,7 +92,7 @@
       "url": "https://github.com/Tencent/WeKnora",
       "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
       "language": "Go",
-      "stars": 31030,
+      "stars": 31032,
       "forks": 4147,
       "stars_this_week": 2509,
       "built_by": [
@@ -109,7 +109,7 @@
       "url": "https://github.com/vercel/next.js",
       "description": "The React Framework",
       "language": "JavaScript",
-      "stars": 142868,
+      "stars": 142869,
       "forks": 33410,
       "stars_this_week": 544,
       "built_by": [
@@ -126,7 +126,7 @@
       "url": "https://github.com/stablyai/orca",
       "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
-      "stars": 80886,
+      "stars": 80890,
       "forks": 5265,
       "stars_this_week": 6151,
       "built_by": [
@@ -160,8 +160,8 @@
       "url": "https://github.com/pytorch/pytorch",
       "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
       "language": "Python",
-      "stars": 103479,
-      "forks": 30882,
+      "stars": 103480,
+      "forks": 30884,
       "stars_this_week": 340,
       "built_by": [
         "pytorchmergebot",
@@ -177,8 +177,8 @@
       "url": "https://github.com/debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 44735,
-      "forks": 5141,
+      "stars": 44766,
+      "forks": 5142,
       "stars_this_week": 7972,
       "built_by": [
         "debpalash",
@@ -194,8 +194,8 @@
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
       "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
-      "stars": 60512,
-      "forks": 10422,
+      "stars": 60515,
+      "forks": 10423,
       "stars_this_week": 5004,
       "built_by": [
         "rohitg00",
@@ -211,7 +211,7 @@
       "url": "https://github.com/trycua/cua",
       "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
       "language": "HTML",
-      "stars": 26893,
+      "stars": 26895,
       "forks": 1872,
       "stars_this_week": 1293,
       "built_by": [
@@ -228,7 +228,7 @@
       "url": "https://github.com/akitaonrails/ai-memory",
       "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
       "language": "Rust",
-      "stars": 8590,
+      "stars": 8591,
       "forks": 581,
       "stars_this_week": 1110,
       "built_by": [
@@ -262,7 +262,7 @@
       "url": "https://github.com/TencentCloud/Octop",
       "description": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
       "language": "Python",
-      "stars": 5582,
+      "stars": 5583,
       "forks": 687,
       "stars_this_week": 970,
       "built_by": [
