@@ -1,0 +1,311 @@
+{
+  "week": "2026-W40",
+  "collected_at": "2026-09-29T04:26:55Z",
+  "source": "https://github.com/trending?since=weekly",
+  "repositories": [
+    {
+      "rank": 1,
+      "repo": "anthropics/financial-services",
+      "url": "https://github.com/anthropics/financial-services",
+      "description": null,
+      "language": "Python",
+      "stars": 38110,
+      "forks": 5487,
+      "stars_this_week": 2381,
+      "built_by": [
+        "mihilmy",
+        "cxyback",
+        "manar-ant",
+        "tobinsouth",
+        "viveknair"
+      ]
+    },
+    {
+      "rank": 2,
+      "repo": "paperclipai/paperclip",
+      "url": "https://github.com/paperclipai/paperclip",
+      "description": "The open-source app everyone uses to manage agents at work",
+      "language": "TypeScript",
+      "stars": 93166,
+      "forks": 15919,
+      "stars_this_week": 10518,
+      "built_by": [
+        "cryppadotta",
+        "Paperclip-Paperclip",
+        "devinfoley",
+        "claude",
+        "nickyleach"
+      ]
+    },
+    {
+      "rank": 3,
+      "repo": "vectorize-io/hindsight",
+      "url": "https://github.com/vectorize-io/hindsight",
+      "description": "Hindsight: Agent Memory That Learns",
+      "language": "Python",
+      "stars": 41303,
+      "forks": 5568,
+      "stars_this_week": 15537,
+      "built_by": [
+        "nicoloboschi",
+        "benfrank241",
+        "claude",
+        "r266-tech",
+        "cdbartholomew"
+      ]
+    },
+    {
+      "rank": 4,
+      "repo": "cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars": 22828,
+      "forks": 1329,
+      "stars_this_week": 3962,
+      "built_by": [
+        "literally-dan",
+        "CooperSheroy",
+        "kennysarnoski-jarvis"
+      ]
+    },
+    {
+      "rank": 5,
+      "repo": "davila7/claude-code-templates",
+      "url": "https://github.com/davila7/claude-code-templates",
+      "description": "CLI tool for configuring and monitoring Claude Code",
+      "language": "Python",
+      "stars": 32097,
+      "forks": 3654,
+      "stars_this_week": 1200,
+      "built_by": [
+        "davila7",
+        "claude",
+        "github-actions",
+        "claude",
+        "dependabot"
+      ]
+    },
+    {
+      "rank": 6,
+      "repo": "Tencent/WeKnora",
+      "url": "https://github.com/Tencent/WeKnora",
+      "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+      "language": "Go",
+      "stars": 31030,
+      "forks": 4147,
+      "stars_this_week": 2509,
+      "built_by": [
+        "lyingbug",
+        "voidkey",
+        "claude",
+        "begoniezhao",
+        "dependabot"
+      ]
+    },
+    {
+      "rank": 7,
+      "repo": "vercel/next.js",
+      "url": "https://github.com/vercel/next.js",
+      "description": "The React Framework",
+      "language": "JavaScript",
+      "stars": 142868,
+      "forks": 33410,
+      "stars_this_week": 544,
+      "built_by": [
+        "ijjk",
+        "timneutkens",
+        "sokra",
+        "vercel-release-bot",
+        "huozhi"
+      ]
+    },
+    {
+      "rank": 8,
+      "repo": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "language": "TypeScript",
+      "stars": 80886,
+      "forks": 5265,
+      "stars_this_week": 6151,
+      "built_by": [
+        "nwparker",
+        "AmethystLiang",
+        "brennanb2025",
+        "orca-ide",
+        "Jinwoo-H"
+      ]
+    },
+    {
+      "rank": 9,
+      "repo": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "stars": 50914,
+      "forks": 4647,
+      "stars_this_week": 1227,
+      "built_by": [
+        "yuh-yang",
+        "claude",
+        "AiMiDi",
+        "omerarslan0",
+        "hito0512"
+      ]
+    },
+    {
+      "rank": 10,
+      "repo": "pytorch/pytorch",
+      "url": "https://github.com/pytorch/pytorch",
+      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "language": "Python",
+      "stars": 103479,
+      "forks": 30882,
+      "stars_this_week": 340,
+      "built_by": [
+        "pytorchmergebot",
+        "ezyang",
+        "malfet",
+        "zou3519",
+        "cyyever"
+      ]
+    },
+    {
+      "rank": 11,
+      "repo": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": "Python",
+      "stars": 44735,
+      "forks": 5141,
+      "stars_this_week": 7972,
+      "built_by": [
+        "debpalash",
+        "claude",
+        "kevin9327",
+        "jaketame",
+        "velixio"
+      ]
+    },
+    {
+      "rank": 12,
+      "repo": "rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "language": "Python",
+      "stars": 60512,
+      "forks": 10422,
+      "stars_this_week": 5004,
+      "built_by": [
+        "rohitg00",
+        "github-actions",
+        "abhinav-m22",
+        "thereisnotime",
+        "claude"
+      ]
+    },
+    {
+      "rank": 13,
+      "repo": "trycua/cua",
+      "url": "https://github.com/trycua/cua",
+      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
+      "language": "HTML",
+      "stars": 26893,
+      "forks": 1872,
+      "stars_this_week": 1293,
+      "built_by": [
+        "f-trycua",
+        "ddupont808",
+        "claude",
+        "github-actions",
+        "r33drichards"
+      ]
+    },
+    {
+      "rank": 14,
+      "repo": "akitaonrails/ai-memory",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "language": "Rust",
+      "stars": 8590,
+      "forks": 581,
+      "stars_this_week": 1110,
+      "built_by": [
+        "akitaonrails",
+        "claude",
+        "djalmajr",
+        "samirhvbr",
+        "wblech"
+      ]
+    },
+    {
+      "rank": 15,
+      "repo": "FxEmbed/FxEmbed",
+      "url": "https://github.com/FxEmbed/FxEmbed",
+      "description": "Fix X/Twitter and Bluesky embeds! Use multiple images, videos, polls, translations and more on Discord, Telegram and others",
+      "language": "TypeScript",
+      "stars": 5559,
+      "forks": 264,
+      "stars_this_week": 465,
+      "built_by": [
+        "renovate",
+        "dangeredwolf",
+        "cursoragent",
+        "Wazbat",
+        "coderabbitai"
+      ]
+    },
+    {
+      "rank": 16,
+      "repo": "TencentCloud/Octop",
+      "url": "https://github.com/TencentCloud/Octop",
+      "description": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
+      "language": "Python",
+      "stars": 5582,
+      "forks": 687,
+      "stars_this_week": 970,
+      "built_by": [
+        "jubaoliang-tencent",
+        "cursoragent",
+        "jubaoliang",
+        "liukewia",
+        "huangcheng"
+      ]
+    },
+    {
+      "rank": 17,
+      "repo": "cloudflare/quiche",
+      "url": "https://github.com/cloudflare/quiche",
+      "description": "🥧 Savoury implementation of the QUIC transport protocol and HTTP/3",
+      "language": "Rust",
+      "stars": 12702,
+      "forks": 1153,
+      "stars_this_week": 522,
+      "built_by": [
+        "ghedo",
+        "github-actions",
+        "traviscibot",
+        "LPardue",
+        "antoniovicente"
+      ]
+    },
+    {
+      "rank": 18,
+      "repo": "elastic/elasticsearch",
+      "url": "https://github.com/elastic/elasticsearch",
+      "description": "Free and Open Source, Distributed, RESTful Search Engine",
+      "language": "Java",
+      "stars": 78073,
+      "forks": 26095,
+      "stars_this_week": 97,
+      "built_by": [
+        "elasticsearchmachine",
+        "kimchy",
+        "nik9000",
+        "martijnvg",
+        "s1monw"
+      ]
+    }
+  ]
+}
