@@ -166,7 +166,15 @@ def update_index(root: Path) -> bool:
 
 def main() -> int:
     collected_at = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
-    repos = parse_trending(fetch(TRENDING_URL))
+    page = fetch(TRENDING_URL)
+    repos = parse_trending(page)
+    articles = len(re.findall(r"<article\b", page, re.I))
+    print(f"page has {articles} <article> elements; parsed {len(repos)} repositories")
+    if len(repos) < articles:
+        print(
+            f"warning: {articles - len(repos)} <article> elements were not parsed; check the trending page markup",
+            file=sys.stderr,
+        )
     if not repos:
         print(
             "error: no repositories parsed from the trending page; its markup may have changed",

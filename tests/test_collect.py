@@ -1,8 +1,11 @@
+import contextlib
 import datetime as dt
+import io
 import json
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 import collect
 
@@ -106,6 +109,34 @@ class OutputTest(unittest.TestCase):
             (root / "README.md").write_text("# Title\n", encoding="utf-8")
             self.assertFalse(collect.update_index(root))
             self.assertEqual((root / "README.md").read_text(encoding="utf-8"), "# Title\n")
+
+
+class MainTest(unittest.TestCase):
+    def run_main(self, page):
+        stdout, stderr = io.StringIO(), io.StringIO()
+        with tempfile.TemporaryDirectory() as tmp, \
+                mock.patch.object(collect, "ROOT", Path(tmp)), \
+                mock.patch.object(collect, "fetch", return_value=page), \
+                contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
+            code = collect.main()
+            written = sorted(str(path.relative_to(tmp)) for path in Path(tmp).rglob("*.*"))
+        return code, stdout.getvalue(), stderr.getvalue(), written
+
+    def test_reports_unparsed_articles(self):
+        page = FIXTURE.read_text(encoding="utf-8").replace(
+            "</main>", '<article class="Box-row"><h2>no repo link</h2></article></main>'
+        )
+        code, out, err, written = self.run_main(page)
+        self.assertEqual(code, 0)
+        self.assertIn("page has 4 <article> elements; parsed 3 repositories", out)
+        self.assertIn("warning: 1 <article> elements were not parsed", err)
+        self.assertEqual(len(written), 2)
+
+    def test_fails_without_repositories(self):
+        code, _, err, written = self.run_main("<html><body>blocked</body></html>")
+        self.assertEqual(code, 1)
+        self.assertIn("error: no repositories parsed", err)
+        self.assertEqual(written, [])
 
 
 if __name__ == "__main__":

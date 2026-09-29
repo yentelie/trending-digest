@@ -2,7 +2,9 @@ name: Weekly trending digest
 
 on:
   schedule:
-    - cron: "0 22 * * 0" # Sundays at 22:00 UTC
+    # Sundays 12:00 UTC (20:00 Asia/Taipei). The weekly digest task reads data/ at
+    # Sundays 21:48 Asia/Taipei, so keep this run well ahead of it.
+    - cron: "0 12 * * 0"
   workflow_dispatch:
 
 permissions:

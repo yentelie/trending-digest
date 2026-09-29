@@ -2,7 +2,7 @@
 
 Weekly digest of GitHub's trending repositories.
 
-Every Sunday at 22:00 UTC, the [Weekly trending digest](.github/workflows/weekly-trending.yml)
+Every Sunday at 12:00 UTC (20:00 Asia/Taipei), the [Weekly trending digest](.github/workflows/weekly-trending.yml)
 workflow fetches <https://github.com/trending?since=weekly> (all languages) and commits:
 
 - `digests/<year>-W<week>.md`: a Markdown table of that week's trending repositories
