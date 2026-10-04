@@ -1,34 +1,17 @@
 {
   "week": "2026-W40",
-  "collected_at": "2026-09-29T04:26:55Z",
+  "collected_at": "2026-10-04T16:39:37Z",
   "source": "https://github.com/trending?since=weekly",
   "repositories": [
     {
       "rank": 1,
-      "repo": "anthropics/financial-services",
-      "url": "https://github.com/anthropics/financial-services",
-      "description": null,
-      "language": "Python",
-      "stars": 38110,
-      "forks": 5487,
-      "stars_this_week": 2381,
-      "built_by": [
-        "mihilmy",
-        "cxyback",
-        "manar-ant",
-        "tobinsouth",
-        "viveknair"
-      ]
-    },
-    {
-      "rank": 2,
       "repo": "paperclipai/paperclip",
       "url": "https://github.com/paperclipai/paperclip",
       "description": "The open-source app everyone uses to manage agents at work",
       "language": "TypeScript",
-      "stars": 93166,
-      "forks": 15919,
-      "stars_this_week": 10518,
+      "stars": 97044,
+      "forks": 16419,
+      "stars_this_week": 10722,
       "built_by": [
         "cryppadotta",
         "Paperclip-Paperclip",
@@ -38,148 +21,48 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 2,
       "repo": "vectorize-io/hindsight",
       "url": "https://github.com/vectorize-io/hindsight",
       "description": "Hindsight: Agent Memory That Learns",
       "language": "Python",
-      "stars": 41303,
-      "forks": 5568,
-      "stars_this_week": 15537,
+      "stars": 45389,
+      "forks": 5906,
+      "stars_this_week": 14507,
       "built_by": [
         "nicoloboschi",
         "benfrank241",
         "claude",
-        "r266-tech",
-        "cdbartholomew"
+        "cdbartholomew",
+        "r266-tech"
+      ]
+    },
+    {
+      "rank": 3,
+      "repo": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "The design language that makes your AI harness better at design.",
+      "language": "JavaScript",
+      "stars": 76014,
+      "forks": 4544,
+      "stars_this_week": 3311,
+      "built_by": [
+        "pbakaus",
+        "claude",
+        "github-actions",
+        "abdulwahabone",
+        "cursoragent"
       ]
     },
     {
       "rank": 4,
-      "repo": "cloudflare/security-audit-skill",
-      "url": "https://github.com/cloudflare/security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-      "language": "JavaScript",
-      "stars": 22828,
-      "forks": 1329,
-      "stars_this_week": 3962,
-      "built_by": [
-        "literally-dan",
-        "CooperSheroy",
-        "kennysarnoski-jarvis"
-      ]
-    },
-    {
-      "rank": 5,
-      "repo": "davila7/claude-code-templates",
-      "url": "https://github.com/davila7/claude-code-templates",
-      "description": "CLI tool for configuring and monitoring Claude Code",
-      "language": "Python",
-      "stars": 32097,
-      "forks": 3654,
-      "stars_this_week": 1200,
-      "built_by": [
-        "davila7",
-        "claude",
-        "github-actions",
-        "claude",
-        "dependabot"
-      ]
-    },
-    {
-      "rank": 6,
-      "repo": "Tencent/WeKnora",
-      "url": "https://github.com/Tencent/WeKnora",
-      "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
-      "language": "Go",
-      "stars": 31030,
-      "forks": 4147,
-      "stars_this_week": 2509,
-      "built_by": [
-        "lyingbug",
-        "voidkey",
-        "claude",
-        "begoniezhao",
-        "dependabot"
-      ]
-    },
-    {
-      "rank": 7,
-      "repo": "vercel/next.js",
-      "url": "https://github.com/vercel/next.js",
-      "description": "The React Framework",
-      "language": "JavaScript",
-      "stars": 142868,
-      "forks": 33410,
-      "stars_this_week": 544,
-      "built_by": [
-        "ijjk",
-        "timneutkens",
-        "sokra",
-        "vercel-release-bot",
-        "huozhi"
-      ]
-    },
-    {
-      "rank": 8,
-      "repo": "stablyai/orca",
-      "url": "https://github.com/stablyai/orca",
-      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
-      "language": "TypeScript",
-      "stars": 80886,
-      "forks": 5265,
-      "stars_this_week": 6151,
-      "built_by": [
-        "nwparker",
-        "AmethystLiang",
-        "brennanb2025",
-        "orca-ide",
-        "Jinwoo-H"
-      ]
-    },
-    {
-      "rank": 9,
-      "repo": "HKUDS/CLI-Anything",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "language": "Python",
-      "stars": 50914,
-      "forks": 4647,
-      "stars_this_week": 1227,
-      "built_by": [
-        "yuh-yang",
-        "claude",
-        "AiMiDi",
-        "omerarslan0",
-        "hito0512"
-      ]
-    },
-    {
-      "rank": 10,
-      "repo": "pytorch/pytorch",
-      "url": "https://github.com/pytorch/pytorch",
-      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
-      "language": "Python",
-      "stars": 103479,
-      "forks": 30882,
-      "stars_this_week": 340,
-      "built_by": [
-        "pytorchmergebot",
-        "ezyang",
-        "malfet",
-        "zou3519",
-        "cyyever"
-      ]
-    },
-    {
-      "rank": 11,
       "repo": "debpalash/VoiceStudio",
       "url": "https://github.com/debpalash/VoiceStudio",
       "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "language": "Python",
-      "stars": 44735,
-      "forks": 5141,
-      "stars_this_week": 7972,
+      "stars": 52998,
+      "forks": 5905,
+      "stars_this_week": 16775,
       "built_by": [
         "debpalash",
         "claude",
@@ -189,14 +72,48 @@
       ]
     },
     {
-      "rank": 12,
+      "rank": 5,
+      "repo": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
+      "language": "TypeScript",
+      "stars": 56604,
+      "forks": 5080,
+      "stars_this_week": 3011,
+      "built_by": [
+        "miguel-heygen",
+        "vanceingalls",
+        "jrusso1020",
+        "claude",
+        "ukimsanov"
+      ]
+    },
+    {
+      "rank": 6,
+      "repo": "Effect-TS/effect",
+      "url": "https://github.com/Effect-TS/effect",
+      "description": "Build production-ready applications in TypeScript",
+      "language": "TypeScript",
+      "stars": 16939,
+      "forks": 818,
+      "stars_this_week": 466,
+      "built_by": [
+        "mikearnaldi",
+        "tim-smart",
+        "gcanti",
+        "github-actions",
+        "fubhy"
+      ]
+    },
+    {
+      "rank": 7,
       "repo": "rohitg00/ai-engineering-from-scratch",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
       "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
-      "stars": 60512,
-      "forks": 10422,
-      "stars_this_week": 5004,
+      "stars": 63696,
+      "forks": 10898,
+      "stars_this_week": 5059,
       "built_by": [
         "rohitg00",
         "github-actions",
@@ -206,65 +123,65 @@
       ]
     },
     {
-      "rank": 13,
-      "repo": "trycua/cua",
-      "url": "https://github.com/trycua/cua",
-      "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
-      "language": "HTML",
-      "stars": 26893,
-      "forks": 1872,
-      "stars_this_week": 1293,
+      "rank": 8,
+      "repo": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "language": "Python",
+      "stars": 90572,
+      "forks": 7961,
+      "stars_this_week": 3952,
       "built_by": [
-        "f-trycua",
-        "ddupont808",
+        "Panniantong",
         "claude",
-        "github-actions",
-        "r33drichards"
+        "nyxst4ck",
+        "kadaliao",
+        "hymansun"
       ]
     },
     {
-      "rank": 14,
-      "repo": "akitaonrails/ai-memory",
-      "url": "https://github.com/akitaonrails/ai-memory",
-      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
-      "language": "Rust",
-      "stars": 8590,
-      "forks": 581,
-      "stars_this_week": 1110,
+      "rank": 9,
+      "repo": "alirezarezvani/claude-skills",
+      "url": "https://github.com/alirezarezvani/claude-skills",
+      "description": "380 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 380+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.",
+      "language": "Python",
+      "stars": 27571,
+      "forks": 3884,
+      "stars_this_week": 948,
       "built_by": [
-        "akitaonrails",
+        "alirezarezvani",
         "claude",
-        "djalmajr",
-        "samirhvbr",
-        "wblech"
+        "olgasafonova",
+        "fernandezbaptiste",
+        "ikala-shawn"
       ]
     },
     {
-      "rank": 15,
-      "repo": "FxEmbed/FxEmbed",
-      "url": "https://github.com/FxEmbed/FxEmbed",
-      "description": "Fix X/Twitter and Bluesky embeds! Use multiple images, videos, polls, translations and more on Discord, Telegram and others",
+      "rank": 10,
+      "repo": "pingdotgg/t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "description": null,
       "language": "TypeScript",
-      "stars": 5559,
-      "forks": 264,
-      "stars_this_week": 465,
+      "stars": 25016,
+      "forks": 6488,
+      "stars_this_week": 975,
       "built_by": [
-        "renovate",
-        "dangeredwolf",
-        "cursoragent",
-        "Wazbat",
-        "coderabbitai"
+        "juliusmarminge",
+        "claude",
+        "t3dotgg",
+        "codex",
+        "maria-rcks"
       ]
     },
     {
-      "rank": 16,
+      "rank": 11,
       "repo": "TencentCloud/Octop",
       "url": "https://github.com/TencentCloud/Octop",
       "description": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
       "language": "Python",
-      "stars": 5582,
-      "forks": 687,
-      "stars_this_week": 970,
+      "stars": 6702,
+      "forks": 827,
+      "stars_this_week": 1476,
       "built_by": [
         "jubaoliang-tencent",
         "cursoragent",
@@ -274,37 +191,133 @@
       ]
     },
     {
-      "rank": 17,
-      "repo": "cloudflare/quiche",
-      "url": "https://github.com/cloudflare/quiche",
-      "description": "🥧 Savoury implementation of the QUIC transport protocol and HTTP/3",
-      "language": "Rust",
-      "stars": 12702,
-      "forks": 1153,
-      "stars_this_week": 522,
+      "rank": 12,
+      "repo": "tile-ai/tilelang",
+      "url": "https://github.com/tile-ai/tilelang",
+      "description": "Domain-specific language designed to streamline the development of high-performance GPU/CPU/Accelerators kernels",
+      "language": "Python",
+      "stars": 8326,
+      "forks": 838,
+      "stars_this_week": 800,
       "built_by": [
-        "ghedo",
-        "github-actions",
-        "traviscibot",
-        "LPardue",
-        "antoniovicente"
+        "LeiWang1999",
+        "chengyupku",
+        "SiriusNEO",
+        "Rachmanino",
+        "xwhzz"
+      ]
+    },
+    {
+      "rank": 13,
+      "repo": "harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+      "language": "Python",
+      "stars": 128401,
+      "forks": 20082,
+      "stars_this_week": 2324,
+      "built_by": [
+        "harry0703",
+        "rudycelekli",
+        "c020627",
+        "claude",
+        "yyhhyyyyyy"
+      ]
+    },
+    {
+      "rank": 14,
+      "repo": "vercel/next.js",
+      "url": "https://github.com/vercel/next.js",
+      "description": "The React Framework",
+      "language": "JavaScript",
+      "stars": 143154,
+      "forks": 33895,
+      "stars_this_week": 678,
+      "built_by": [
+        "ijjk",
+        "timneutkens",
+        "sokra",
+        "vercel-release-bot",
+        "huozhi"
+      ]
+    },
+    {
+      "rank": 15,
+      "repo": "cs341-illinois/coursebook",
+      "url": "https://github.com/cs341-illinois/coursebook",
+      "description": "Open Source Introductory Systems Programming Textbook for the University of Illinois",
+      "language": "TeX",
+      "stars": 3665,
+      "forks": 307,
+      "stars_this_week": 1625,
+      "built_by": [
+        "bhuvy2",
+        "angrave",
+        "PradyumnaShome",
+        "ekcom",
+        "aneeshdurg"
+      ]
+    },
+    {
+      "rank": 16,
+      "repo": "NVIDIA/OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "language": "Rust",
+      "stars": 14792,
+      "forks": 1691,
+      "stars_this_week": 5854,
+      "built_by": [
+        "drew",
+        "johntmyers",
+        "pimlock",
+        "miyoungc",
+        "elezar"
+      ]
+    },
+    {
+      "rank": 17,
+      "repo": "pablostanley/yoinks",
+      "url": "https://github.com/pablostanley/yoinks",
+      "description": "yoink any video from your terminal. no shady ads.",
+      "language": "TypeScript",
+      "stars": 4237,
+      "forks": 372,
+      "stars_this_week": 1917,
+      "built_by": [
+        "pablostanley",
+        "claude"
       ]
     },
     {
       "rank": 18,
-      "repo": "elastic/elasticsearch",
-      "url": "https://github.com/elastic/elasticsearch",
-      "description": "Free and Open Source, Distributed, RESTful Search Engine",
-      "language": "Java",
-      "stars": 78073,
-      "forks": 26095,
-      "stars_this_week": 97,
+      "repo": "mvschwarz/openrig",
+      "url": "https://github.com/mvschwarz/openrig",
+      "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
+      "language": "TypeScript",
+      "stars": 4888,
+      "forks": 352,
+      "stars_this_week": 4245,
       "built_by": [
-        "elasticsearchmachine",
-        "kimchy",
-        "nik9000",
-        "martijnvg",
-        "s1monw"
+        "mvschwarz",
+        "claude",
+        "rudycelekli",
+        "dajiaohuang",
+        "Totopo27"
+      ]
+    },
+    {
+      "rank": 19,
+      "repo": "HunxByts/GhostTrack",
+      "url": "https://github.com/HunxByts/GhostTrack",
+      "description": "Useful tool to track location or mobile number",
+      "language": "Python",
+      "stars": 16960,
+      "forks": 2312,
+      "stars_this_week": 1638,
+      "built_by": [
+        "HunxByts",
+        "bakaemon"
       ]
     }
   ]
