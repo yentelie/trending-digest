@@ -1,0 +1,177 @@
+{
+  "week": "2026-W42",
+  "collected_at": "2026-10-18T15:36:17Z",
+  "source": "https://github.com/trending?since=weekly",
+  "repositories": [
+    {
+      "rank": 1,
+      "repo": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "language": "TypeScript",
+      "stars": 317742,
+      "forks": 80587,
+      "stars_this_week": 239923,
+      "built_by": [
+        "morluto",
+        "N0zoM1z0",
+        "kaoru0822-kitauji",
+        "claude",
+        "rudycelekli"
+      ]
+    },
+    {
+      "rank": 2,
+      "repo": "storytold/artcraft",
+      "url": "https://github.com/storytold/artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "language": "Rust",
+      "stars": 32384,
+      "forks": 5130,
+      "stars_this_week": 18479,
+      "built_by": [
+        "echelon",
+        "bflatastic",
+        "ArEnSc",
+        "wilwong",
+        "Quicksticks-oss"
+      ]
+    },
+    {
+      "rank": 3,
+      "repo": "boykopovar/AnyPS5",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "language": "C++",
+      "stars": 42720,
+      "forks": 3871,
+      "stars_this_week": 16250,
+      "built_by": [
+        "claude",
+        "adriadam10",
+        "oneandonlydean",
+        "boykopovar",
+        "MarcZX10"
+      ]
+    },
+    {
+      "rank": 4,
+      "repo": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "stars": 42398,
+      "forks": 4515,
+      "stars_this_week": 3581,
+      "built_by": [
+        "github-actions",
+        "jordanecker-ant",
+        "bryan-anthropic",
+        "claude",
+        "mhegazy"
+      ]
+    },
+    {
+      "rank": 5,
+      "repo": "mksglu/context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "stars": 30652,
+      "forks": 2247,
+      "stars_this_week": 4438,
+      "built_by": [
+        "mksglu",
+        "github-actions",
+        "claude",
+        "ipedro",
+        "ousamabenyounes"
+      ]
+    },
+    {
+      "rank": 6,
+      "repo": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars": 57488,
+      "forks": 3670,
+      "stars_this_week": 8382,
+      "built_by": [
+        "cathrynlavery",
+        "github-actions",
+        "rudycelekli",
+        "claude",
+        "parveen0029"
+      ]
+    },
+    {
+      "rank": 7,
+      "repo": "NationalSecurityAgency/ghidra",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "language": "Java",
+      "stars": 90627,
+      "forks": 10147,
+      "stars_this_week": 7608,
+      "built_by": [
+        "ryanmkurtz",
+        "ghidra1",
+        "dragonmacher",
+        "nsadeveloper789",
+        "caheckman"
+      ]
+    },
+    {
+      "rank": 8,
+      "repo": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
+      "language": "TypeScript",
+      "stars": 66484,
+      "forks": 6010,
+      "stars_this_week": 5639,
+      "built_by": [
+        "miguel-heygen",
+        "vanceingalls",
+        "jrusso1020",
+        "claude",
+        "ukimsanov"
+      ]
+    },
+    {
+      "rank": 9,
+      "repo": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "language": "TypeScript",
+      "stars": 12591,
+      "forks": 1232,
+      "stars_this_week": 1536,
+      "built_by": [
+        "cursoragent",
+        "poteto",
+        "minupalaniappan",
+        "ericzakariasson",
+        "roshansada"
+      ]
+    },
+    {
+      "rank": 10,
+      "repo": "MadsLorentzen/ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "language": "Python",
+      "stars": 51956,
+      "forks": 17157,
+      "stars_this_week": 4200,
+      "built_by": [
+        "claude",
+        "MadsLorentzen",
+        "ayobamiseun",
+        "oscarbol09",
+        "jakob1379"
+      ]
+    }
+  ]
+}
