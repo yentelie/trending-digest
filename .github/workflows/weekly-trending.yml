@@ -19,7 +19,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      # Always commit to main: the scheduled run uses the repo's default branch,
+      # which may not be main, and the digest task reads data/ from main.
       - uses: actions/checkout@v5
+        with:
+          ref: main
 
       - name: Test parser
         run: python3 -m unittest
@@ -37,4 +41,4 @@ jobs:
             exit 0
           fi
           git commit -m "Add trending digest for $(date -u +%G-W%V)"
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+          git push origin HEAD:main
