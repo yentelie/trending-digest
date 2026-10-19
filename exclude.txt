@@ -2,3 +2,6 @@
 # Meta repositories: plugin, skill and extension directories rather than projects.
 anthropics/claude-plugins-official
 cursor/plugins
+alirezarezvani/claude-skills
+mattpocock/skills
+K-Dense-AI/scientific-agent-skills
