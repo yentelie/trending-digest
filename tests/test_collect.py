@@ -37,6 +37,7 @@ class ParseTrendingTest(unittest.TestCase):
                 "forks": 5487,
                 "stars_this_week": 2381,
                 "built_by": ["alice", "bob"],
+                "source_page": None,
             },
         )
 
@@ -56,6 +57,43 @@ class ParseTrendingTest(unittest.TestCase):
 
     def test_page_without_articles(self):
         self.assertEqual(collect.parse_trending("<html><h2><a href='/a/b'>x</a></h2></html>"), [])
+
+
+def entry(repo, stars_this_week):
+    return {"rank": 0, "repo": repo, "stars_this_week": stars_this_week}
+
+
+class MergeTest(unittest.TestCase):
+    def test_main_page_order_then_language_pages_by_stars(self):
+        merged = collect.merge(
+            [entry("a/one", 5), entry("a/two", 900)],
+            [[entry("b/low", 10), entry("A/One", 1000)], [entry("c/high", 500), entry("c/none", None)]],
+            excludes=set(),
+            limit=50,
+        )
+        self.assertEqual([repo["repo"] for repo in merged], ["a/one", "a/two", "c/high", "b/low", "c/none"])
+        self.assertEqual([repo["rank"] for repo in merged], [1, 2, 3, 4, 5])
+
+    def test_excludes_case_insensitively_and_caps_at_limit(self):
+        merged = collect.merge(
+            [entry("Cursor/Plugins", 9), entry("a/one", 8)],
+            [[entry(f"x/{n}", n) for n in range(10)]],
+            excludes={"cursor/plugins"},
+            limit=4,
+        )
+        self.assertEqual([repo["repo"] for repo in merged], ["a/one", "x/9", "x/8", "x/7"])
+
+    def test_load_excludes(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "exclude.txt"
+            self.assertEqual(collect.load_excludes(path), set())
+            path.write_text("# comment\n\nCursor/Plugins  # meta\nanthropics/claude-plugins-official\n", encoding="utf-8")
+            self.assertEqual(collect.load_excludes(path), {"cursor/plugins", "anthropics/claude-plugins-official"})
+
+    def test_repo_exclude_file_parses(self):
+        excludes = collect.load_excludes(Path(collect.__file__).parent / collect.EXCLUDE_FILE)
+        self.assertIn("anthropics/claude-plugins-official", excludes)
+        self.assertIn("cursor/plugins", excludes)
 
 
 class OutputTest(unittest.TestCase):
@@ -116,10 +154,12 @@ class MainTest(unittest.TestCase):
         stdout, stderr = io.StringIO(), io.StringIO()
         with tempfile.TemporaryDirectory() as tmp, \
                 mock.patch.object(collect, "ROOT", Path(tmp)), \
-                mock.patch.object(collect, "fetch", return_value=page), \
+                mock.patch.object(collect, "fetch", return_value=page) as fetch, \
+                mock.patch.object(collect, "FETCH_DELAY", 0), \
                 contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
             code = collect.main()
             written = sorted(str(path.relative_to(tmp)) for path in Path(tmp).rglob("*.*"))
+            self.fetched = [call.args[0] for call in fetch.call_args_list]
         return code, stdout.getvalue(), stderr.getvalue(), written
 
     def test_reports_unparsed_articles(self):
@@ -128,9 +168,30 @@ class MainTest(unittest.TestCase):
         )
         code, out, err, written = self.run_main(page)
         self.assertEqual(code, 0)
-        self.assertIn("page has 4 <article> elements; parsed 3 repositories", out)
-        self.assertIn("warning: 1 <article> elements were not parsed", err)
+        self.assertIn("trending: page has 4 <article> elements; parsed 3 repositories", out)
+        self.assertIn("warning: trending: 1 <article> elements were not parsed", err)
         self.assertEqual(len(written), 2)
+
+    def test_fetches_every_language_page_and_dedupes(self):
+        code, out, err, written = self.run_main(FIXTURE.read_text(encoding="utf-8"))
+        self.assertEqual(code, 0)
+        self.assertEqual(self.fetched[0], collect.TRENDING_URL)
+        self.assertIn("https://github.com/trending/python?since=weekly", self.fetched)
+        self.assertEqual(len(self.fetched), 1 + len(collect.LANGUAGES))
+        self.assertIn("collected 3 repositories", out)
+        self.assertIn("warning: only 3 of 50 repositories", err)
+
+    def test_skips_language_page_that_fails_to_fetch(self):
+        page = FIXTURE.read_text(encoding="utf-8")
+        responses = [page, OSError("boom")] + [page] * (len(collect.LANGUAGES) - 1)
+        stdout, stderr = io.StringIO(), io.StringIO()
+        with tempfile.TemporaryDirectory() as tmp, \
+                mock.patch.object(collect, "ROOT", Path(tmp)), \
+                mock.patch.object(collect, "fetch", side_effect=responses), \
+                mock.patch.object(collect, "FETCH_DELAY", 0), \
+                contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
+            self.assertEqual(collect.main(), 0)
+        self.assertIn(f"warning: trending/{collect.LANGUAGES[0]}: fetch failed (boom); skipped", stderr.getvalue())
 
     def test_fails_without_repositories(self):
         code, _, err, written = self.run_main("<html><body>blocked</body></html>")

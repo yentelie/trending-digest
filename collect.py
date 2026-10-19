@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Collect GitHub's weekly trending repositories into a Markdown digest.
 
-Fetches https://github.com/trending?since=weekly, writes
-data/<ISO week>.json and digests/<ISO week>.md, and refreshes the
-digest index in README.md. Standard library only.
+Fetches https://github.com/trending?since=weekly plus the weekly trending
+page of each language in LANGUAGES, drops repositories listed in
+exclude.txt, keeps the top LIMIT, writes data/<ISO week>.json and
+digests/<ISO week>.md, and refreshes the digest index in README.md.
+Standard library only.
 """
 
 from __future__ import annotations
@@ -18,7 +20,16 @@ import urllib.request
 from pathlib import Path
 
 TRENDING_URL = "https://github.com/trending?since=weekly"
+# The all-languages page lists only 10-25 repositories, so the per-language
+# pages fill the digest up to LIMIT. Slugs are as they appear in trending URLs.
+LANGUAGES = [
+    "python", "typescript", "javascript", "go", "rust", "java", "c++", "c", "c%23",
+    "swift", "kotlin", "jupyter-notebook", "html", "shell", "php", "ruby",
+]
+LIMIT = 50
+FETCH_DELAY = 1.0  # seconds between page requests
 ROOT = Path(__file__).resolve().parent
+EXCLUDE_FILE = "exclude.txt"
 INDEX_START = "<!-- digests:start -->"
 INDEX_END = "<!-- digests:end -->"
 
@@ -92,9 +103,50 @@ def parse_trending(page: str) -> list[dict]:
                 "forks": _count(forks.group(1)) if forks else None,
                 "stars_this_week": _count(stars_this_week.group(1)) if stars_this_week else None,
                 "built_by": _AVATAR_RE.findall(built_by.group(1)) if built_by else [],
+                "source_page": None,
             }
         )
     return repos
+
+
+def trending_url(language: str | None = None) -> str:
+    return f"https://github.com/trending/{language}?since=weekly" if language else TRENDING_URL
+
+
+def load_excludes(path: Path) -> set[str]:
+    """Read owner/name entries (one per line, # comments) to leave out of the digest."""
+    if not path.exists():
+        return set()
+    entries = set()
+    for line in path.read_text(encoding="utf-8").splitlines():
+        entry = line.split("#", 1)[0].strip()
+        if entry:
+            entries.add(entry.lower())
+    return entries
+
+
+def merge(main_page: list[dict], language_pages: list[list[dict]], excludes: set[str], limit: int) -> list[dict]:
+    """Combine trending pages into one ranked list.
+
+    The all-languages page keeps GitHub's order; repositories found only on
+    language pages follow, by stars this week. Excluded and duplicate
+    repositories are dropped, and ranks are renumbered.
+    """
+    extras = sorted(
+        (repo for page in language_pages for repo in page),
+        key=lambda repo: repo["stars_this_week"] or 0,
+        reverse=True,
+    )
+    merged, seen = [], set()
+    for repo in main_page + extras:
+        key = repo["repo"].lower()
+        if key in seen or key in excludes:
+            continue
+        seen.add(key)
+        merged.append({**repo, "rank": len(merged) + 1})
+        if len(merged) == limit:
+            break
+    return merged
 
 
 def week_label(moment: dt.datetime) -> str:
@@ -118,7 +170,8 @@ def render_digest(repos: list[dict], collected_at: dt.datetime) -> str:
         f"# GitHub Trending — {week_label(collected_at)}",
         "",
         f"Week of {monday} to {sunday}. "
-        f"Collected {collected_at:%Y-%m-%d %H:%M} UTC from <{TRENDING_URL}>.",
+        f"Collected {collected_at:%Y-%m-%d %H:%M} UTC from <{TRENDING_URL}> "
+        "and the weekly trending page of each language.",
         "",
         "| # | Repository | Language | Stars this week | Total stars | Description |",
         "|--:|---|---|--:|--:|---|",
@@ -142,6 +195,7 @@ def write_outputs(root: Path, repos: list[dict], collected_at: dt.datetime) -> l
         "week": week,
         "collected_at": collected_at.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "source": TRENDING_URL,
+        "languages": LANGUAGES,
         "repositories": repos,
     }
     data_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -164,23 +218,44 @@ def update_index(root: Path) -> bool:
     return True
 
 
-def main() -> int:
-    collected_at = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
-    page = fetch(TRENDING_URL)
+def collect_page(language: str | None = None) -> list[dict]:
+    url = trending_url(language)
+    page = fetch(url)
     repos = parse_trending(page)
+    label = f"trending/{language}" if language else "trending"
+    for repo in repos:
+        repo["source_page"] = url
     articles = len(re.findall(r"<article\b", page, re.I))
-    print(f"page has {articles} <article> elements; parsed {len(repos)} repositories")
+    print(f"{label}: page has {articles} <article> elements; parsed {len(repos)} repositories")
     if len(repos) < articles:
         print(
-            f"warning: {articles - len(repos)} <article> elements were not parsed; check the trending page markup",
+            f"warning: {label}: {articles - len(repos)} <article> elements were not parsed; "
+            "check the trending page markup",
             file=sys.stderr,
         )
-    if not repos:
+    return repos
+
+
+def main() -> int:
+    collected_at = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
+    main_page = collect_page()
+    if not main_page:
         print(
             "error: no repositories parsed from the trending page; its markup may have changed",
             file=sys.stderr,
         )
         return 1
+    language_pages = []
+    for language in LANGUAGES:
+        time.sleep(FETCH_DELAY)
+        try:
+            language_pages.append(collect_page(language))
+        except OSError as error:
+            print(f"warning: trending/{language}: fetch failed ({error}); skipped", file=sys.stderr)
+    excludes = load_excludes(ROOT / EXCLUDE_FILE)
+    repos = merge(main_page, language_pages, excludes, LIMIT)
+    if len(repos) < LIMIT:
+        print(f"warning: only {len(repos)} of {LIMIT} repositories after merging and exclusions", file=sys.stderr)
     if all(repo["stars_this_week"] is None for repo in repos):
         print("warning: no 'stars this week' counts parsed; check the trending page markup", file=sys.stderr)
     for path in write_outputs(ROOT, repos, collected_at):

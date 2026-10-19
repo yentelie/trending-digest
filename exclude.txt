@@ -1,0 +1,4 @@
+# Repositories left out of the digest, one owner/name per line (case-insensitive).
+# Meta repositories: plugin, skill and extension directories rather than projects.
+anthropics/claude-plugins-official
+cursor/plugins
