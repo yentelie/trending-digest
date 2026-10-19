@@ -25,5 +25,7 @@ If GitHub changes the trending page markup and nothing can be parsed, the run fa
 ## Digests
 
 <!-- digests:start -->
+- [2026-W42](digests/2026-W42.md)
+- [2026-W41](digests/2026-W41.md)
 - [2026-W40](digests/2026-W40.md)
 <!-- digests:end -->
