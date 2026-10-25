@@ -1,0 +1,916 @@
+{
+  "week": "2026-W43",
+  "collected_at": "2026-10-25T15:48:07Z",
+  "source": "https://github.com/trending?since=weekly",
+  "languages": [
+    "python",
+    "typescript",
+    "javascript",
+    "go",
+    "rust",
+    "java",
+    "c++",
+    "c",
+    "c%23",
+    "swift",
+    "kotlin",
+    "jupyter-notebook",
+    "html",
+    "shell",
+    "php",
+    "ruby"
+  ],
+  "repositories": [
+    {
+      "rank": 1,
+      "repo": "cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "stars": 46187,
+      "forks": 2867,
+      "stars_this_week": 12680,
+      "built_by": [
+        "literally-dan",
+        "CooperSheroy",
+        "kennysarnoski-jarvis"
+      ],
+      "source_page": "https://github.com/trending?since=weekly"
+    },
+    {
+      "rank": 2,
+      "repo": "ruvnet/ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "language": "TypeScript",
+      "stars": 79202,
+      "forks": 9298,
+      "stars_this_week": 3241,
+      "built_by": [
+        "ruvnet",
+        "claude",
+        "rudycelekli",
+        "proffesor-for-testing"
+      ],
+      "source_page": "https://github.com/trending?since=weekly"
+    },
+    {
+      "rank": 3,
+      "repo": "anthropics/knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "language": "Python",
+      "stars": 32886,
+      "forks": 3627,
+      "stars_this_week": 2631,
+      "built_by": [
+        "github-actions",
+        "jordanecker-ant",
+        "bryan-anthropic",
+        "claude",
+        "mattpic-ant"
+      ],
+      "source_page": "https://github.com/trending?since=weekly"
+    },
+    {
+      "rank": 4,
+      "repo": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "description": "The open source coding agent.",
+      "language": "TypeScript",
+      "stars": 221425,
+      "forks": 29630,
+      "stars_this_week": 6857,
+      "built_by": [
+        "thdxr",
+        "rekram1-node",
+        "adamdotdevin",
+        "opencode-agent",
+        "kitlangton"
+      ],
+      "source_page": "https://github.com/trending?since=weekly"
+    },
+    {
+      "rank": 5,
+      "repo": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "language": "TypeScript",
+      "stars": 105494,
+      "forks": 6672,
+      "stars_this_week": 9828,
+      "built_by": [
+        "nwparker",
+        "brennanb2025",
+        "Jinwoo-H",
+        "AmethystLiang",
+        "orca-ide"
+      ],
+      "source_page": "https://github.com/trending?since=weekly"
+    },
+    {
+      "rank": 6,
+      "repo": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
+      "language": "TypeScript",
+      "stars": 71927,
+      "forks": 6497,
+      "stars_this_week": 5633,
+      "built_by": [
+        "miguel-heygen",
+        "vanceingalls",
+        "jrusso1020",
+        "claude",
+        "ukimsanov"
+      ],
+      "source_page": "https://github.com/trending?since=weekly"
+    },
+    {
+      "rank": 7,
+      "repo": "android/skills",
+      "url": "https://github.com/android/skills",
+      "description": null,
+      "language": "Kotlin",
+      "stars": 9679,
+      "forks": 624,
+      "stars_this_week": 1317,
+      "built_by": [
+        "android-devrel-github-bot",
+        "simona-anomis",
+        "JoseAlcerreca",
+        "bentrengrove",
+        "vinishavathwani"
+      ],
+      "source_page": "https://github.com/trending?since=weekly"
+    },
+    {
+      "rank": 8,
+      "repo": "Graphify-Labs/graphify",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+      "language": "Python",
+      "stars": 134885,
+      "forks": 12877,
+      "stars_this_week": 6868,
+      "built_by": [
+        "claude",
+        "safishamsi",
+        "ayushcodes10",
+        "rajatnagda45",
+        "abhay-codes07"
+      ],
+      "source_page": "https://github.com/trending?since=weekly"
+    },
+    {
+      "rank": 9,
+      "repo": "akitaonrails/ai-memory",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "language": "Rust",
+      "stars": 13441,
+      "forks": 950,
+      "stars_this_week": 3541,
+      "built_by": [
+        "akitaonrails",
+        "claude",
+        "viniciusdsandrade",
+        "rudycelekli",
+        "djalmajr"
+      ],
+      "source_page": "https://github.com/trending?since=weekly"
+    },
+    {
+      "rank": 10,
+      "repo": "Comfy-Org/ComfyUI",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+      "language": "Python",
+      "stars": 142845,
+      "forks": 16855,
+      "stars_this_week": 4648,
+      "built_by": [
+        "comfyanonymous",
+        "bigcat88",
+        "pythongosssss",
+        "comfyui-wiki",
+        "rattus128"
+      ],
+      "source_page": "https://github.com/trending?since=weekly"
+    },
+    {
+      "rank": 11,
+      "repo": "vllm-project/vllm",
+      "url": "https://github.com/vllm-project/vllm",
+      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "language": "Python",
+      "stars": 95452,
+      "forks": 23933,
+      "stars_this_week": 1371,
+      "built_by": [
+        "claude",
+        "DarkLight1337",
+        "mgoin",
+        "WoosukKwon",
+        "hmellor"
+      ],
+      "source_page": "https://github.com/trending?since=weekly"
+    },
+    {
+      "rank": 12,
+      "repo": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": null,
+      "stars": 223646,
+      "forks": 22398,
+      "stars_this_week": 2981,
+      "built_by": [
+        "forrestchang",
+        "claude",
+        "back1ply",
+        "herobrine19",
+        "szkocot"
+      ],
+      "source_page": "https://github.com/trending?since=weekly"
+    },
+    {
+      "rank": 13,
+      "repo": "pingdotgg/t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 30002,
+      "forks": 8051,
+      "stars_this_week": 1778,
+      "built_by": [
+        "juliusmarminge",
+        "claude",
+        "t3dotgg",
+        "codex",
+        "maria-rcks"
+      ],
+      "source_page": "https://github.com/trending?since=weekly"
+    },
+    {
+      "rank": 14,
+      "repo": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": "Python",
+      "stars": 86106,
+      "forks": 9545,
+      "stars_this_week": 12237,
+      "built_by": [
+        "debpalash",
+        "claude",
+        "velixio",
+        "kevin9327",
+        "jaketame"
+      ],
+      "source_page": "https://github.com/trending/python?since=weekly"
+    },
+    {
+      "rank": 15,
+      "repo": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "language": "JavaScript",
+      "stars": 175948,
+      "forks": 9603,
+      "stars_this_week": 9747,
+      "built_by": [
+        "DietrichGebert",
+        "claude",
+        "ousamabenyounes",
+        "Lakshya77089",
+        "dhedhialy"
+      ],
+      "source_page": "https://github.com/trending/javascript?since=weekly"
+    },
+    {
+      "rank": 16,
+      "repo": "xerj-org/xerj",
+      "url": "https://github.com/xerj-org/xerj",
+      "description": "Local-first search engine and MCP server for AI agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search without grep, agent memory and RAG. Elasticsearch-compatible API; Corpus Hub serves hundreds of reference memory corpora.",
+      "language": "Rust",
+      "stars": 15464,
+      "forks": 1118,
+      "stars_this_week": 8080,
+      "built_by": [
+        "xerj-org",
+        "claude",
+        "cursoragent",
+        "buger",
+        "Vinz2168"
+      ],
+      "source_page": "https://github.com/trending/rust?since=weekly"
+    },
+    {
+      "rank": 17,
+      "repo": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "The design language that makes your AI harness better at design.",
+      "language": "Rust",
+      "stars": 87251,
+      "forks": 5214,
+      "stars_this_week": 4478,
+      "built_by": [
+        "pbakaus",
+        "claude",
+        "github-actions",
+        "abdulwahabone",
+        "cursoragent"
+      ],
+      "source_page": "https://github.com/trending/rust?since=weekly"
+    },
+    {
+      "rank": 18,
+      "repo": "tashfeenahmed/freellmapi",
+      "url": "https://github.com/tashfeenahmed/freellmapi",
+      "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
+      "language": "TypeScript",
+      "stars": 41371,
+      "forks": 5577,
+      "stars_this_week": 4402,
+      "built_by": [
+        "tashfeenahmed",
+        "claude",
+        "suantea",
+        "tashdroid",
+        "OhOkThisIsFine"
+      ],
+      "source_page": "https://github.com/trending/typescript?since=weekly"
+    },
+    {
+      "rank": 19,
+      "repo": "NationalSecurityAgency/ghidra",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "description": "Ghidra is a software reverse engineering (SRE) framework",
+      "language": "Java",
+      "stars": 94181,
+      "forks": 10579,
+      "stars_this_week": 4008,
+      "built_by": [
+        "ryanmkurtz",
+        "ghidra1",
+        "dragonmacher",
+        "nsadeveloper789",
+        "caheckman"
+      ],
+      "source_page": "https://github.com/trending/java?since=weekly"
+    },
+    {
+      "rank": 20,
+      "repo": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "stars": 60956,
+      "forks": 3953,
+      "stars_this_week": 3863,
+      "built_by": [
+        "cathrynlavery",
+        "github-actions",
+        "rudycelekli",
+        "claude",
+        "parveen0029"
+      ],
+      "source_page": "https://github.com/trending/html?since=weekly"
+    },
+    {
+      "rank": 21,
+      "repo": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "stars": 304893,
+      "forks": 27161,
+      "stars_this_week": 3772,
+      "built_by": [
+        "obra",
+        "arittr",
+        "claude",
+        "clkao",
+        "arimu1"
+      ],
+      "source_page": "https://github.com/trending/shell?since=weekly"
+    },
+    {
+      "rank": 22,
+      "repo": "hmjz100/LinkSwift",
+      "url": "https://github.com/hmjz100/LinkSwift",
+      "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
+      "language": "JavaScript",
+      "stars": 27819,
+      "forks": 1846,
+      "stars_this_week": 3355,
+      "built_by": [
+        "hmjz100",
+        "MisaLiu",
+        "Night-stars-1",
+        "sherlocknieh",
+        "DeepslateQAQ"
+      ],
+      "source_page": "https://github.com/trending/javascript?since=weekly"
+    },
+    {
+      "rank": 23,
+      "repo": "NVIDIA/OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "language": "Rust",
+      "stars": 19783,
+      "forks": 1961,
+      "stars_this_week": 3189,
+      "built_by": [
+        "drew",
+        "johntmyers",
+        "pimlock",
+        "miyoungc",
+        "elezar"
+      ],
+      "source_page": "https://github.com/trending/rust?since=weekly"
+    },
+    {
+      "rank": 24,
+      "repo": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "language": "Python",
+      "stars": 57021,
+      "forks": 5117,
+      "stars_this_week": 3069,
+      "built_by": [
+        "yuh-yang",
+        "claude",
+        "AiMiDi",
+        "omerarslan0",
+        "hito0512"
+      ],
+      "source_page": "https://github.com/trending/python?since=weekly"
+    },
+    {
+      "rank": 25,
+      "repo": "msitarzewski/agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+      "language": "Shell",
+      "stars": 163911,
+      "forks": 26456,
+      "stars_this_week": 2983,
+      "built_by": [
+        "msitarzewski",
+        "rudycelekli",
+        "claude",
+        "epowelljr",
+        "Hotragn"
+      ],
+      "source_page": "https://github.com/trending/shell?since=weekly"
+    },
+    {
+      "rank": 26,
+      "repo": "shiyu-coder/Kronos",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "language": "Python",
+      "stars": 43706,
+      "forks": 7222,
+      "stars_this_week": 2732,
+      "built_by": [
+        "shiyu-coder",
+        "Luciferbobo",
+        "CharlesJ-ABu",
+        "AnMakc",
+        "randyy179"
+      ],
+      "source_page": "https://github.com/trending/python?since=weekly"
+    },
+    {
+      "rank": 27,
+      "repo": "LibreSpark/LibreTV",
+      "url": "https://github.com/LibreSpark/LibreTV",
+      "description": "一分钟搭建影视站，支持Docker等部署方式",
+      "language": "TypeScript",
+      "stars": 21792,
+      "forks": 30071,
+      "stars_this_week": 2469,
+      "built_by": [
+        "bestZwei",
+        "github-actions",
+        "senshinya",
+        "JohnsonRan",
+        "WLongSAMA"
+      ],
+      "source_page": "https://github.com/trending/typescript?since=weekly"
+    },
+    {
+      "rank": 28,
+      "repo": "luongnv89/claude-howto",
+      "url": "https://github.com/luongnv89/claude-howto",
+      "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+      "language": "Python",
+      "stars": 44930,
+      "forks": 5528,
+      "stars_this_week": 2435,
+      "built_by": [
+        "luongnv89",
+        "claude",
+        "edocltd",
+        "toanalien",
+        "lzw-git-all"
+      ],
+      "source_page": "https://github.com/trending/python?since=weekly"
+    },
+    {
+      "rank": 29,
+      "repo": "PC2005-cloud/dsh-pet",
+      "url": "https://github.com/PC2005-cloud/dsh-pet",
+      "description": "DSH 桌面宠物：一行命令装好即用的透明动画小桌宠，支持多开、大小位置随心配置；还内置 DIY 素材链，能用 AI 视频自造专属宠物",
+      "language": "TypeScript",
+      "stars": 4085,
+      "forks": 308,
+      "stars_this_week": 2268,
+      "built_by": [
+        "PC2005-cloud",
+        "LACANIA",
+        "Zn-Dk",
+        "Free-LZJ",
+        "SkanderBog"
+      ],
+      "source_page": "https://github.com/trending/typescript?since=weekly"
+    },
+    {
+      "rank": 30,
+      "repo": "Renhuai123/ziwei-doushu",
+      "url": "https://github.com/Renhuai123/ziwei-doushu",
+      "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+      "language": "TypeScript",
+      "stars": 7458,
+      "forks": 1529,
+      "stars_this_week": 2209,
+      "built_by": [
+        "Renhuai123",
+        "claude",
+        "dependabot",
+        "Renhuai",
+        "sakura168899-debug"
+      ],
+      "source_page": "https://github.com/trending/typescript?since=weekly"
+    },
+    {
+      "rank": 31,
+      "repo": "TauricResearch/TradingAgents",
+      "url": "https://github.com/TauricResearch/TradingAgents",
+      "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+      "language": "Python",
+      "stars": 114156,
+      "forks": 22092,
+      "stars_this_week": 2160,
+      "built_by": [
+        "Yijia-Xiao",
+        "EdwardoSunny",
+        "CadeYu",
+        "luohy15",
+        "claude"
+      ],
+      "source_page": "https://github.com/trending/python?since=weekly"
+    },
+    {
+      "rank": 32,
+      "repo": "thesysdev/openui",
+      "url": "https://github.com/thesysdev/openui",
+      "description": "The Open Standard for Generative UI",
+      "language": "TypeScript",
+      "stars": 13823,
+      "forks": 909,
+      "stars_this_week": 2131,
+      "built_by": [
+        "i-subham23",
+        "AbhinRustagi",
+        "ankit-thesys",
+        "abhithesys",
+        "zahlekhan"
+      ],
+      "source_page": "https://github.com/trending/typescript?since=weekly"
+    },
+    {
+      "rank": 33,
+      "repo": "strelov1/freehire",
+      "url": "https://github.com/strelov1/freehire",
+      "description": "freehire — the open-source search engine for job seekers",
+      "language": "Go",
+      "stars": 3026,
+      "forks": 302,
+      "stars_this_week": 2066,
+      "built_by": [
+        "strelov1",
+        "claude",
+        "dependabot",
+        "github-actions",
+        "gearsandcode"
+      ],
+      "source_page": "https://github.com/trending/go?since=weekly"
+    },
+    {
+      "rank": 34,
+      "repo": "tw93/Mole",
+      "url": "https://github.com/tw93/Mole",
+      "description": "🐹 Keep your Mac and PC clean, light, and running like new. Fast open-source CLI, plus native Mac and Windows apps.",
+      "language": "Shell",
+      "stars": 72820,
+      "forks": 2569,
+      "stars_this_week": 1820,
+      "built_by": [
+        "tw93",
+        "github-actions",
+        "youxi798",
+        "dependabot",
+        "M-Hassan-Raza"
+      ],
+      "source_page": "https://github.com/trending/shell?since=weekly"
+    },
+    {
+      "rank": 35,
+      "repo": "withmarbleapp/os-taxonomy",
+      "url": "https://github.com/withmarbleapp/os-taxonomy",
+      "description": null,
+      "language": "JavaScript",
+      "stars": 7349,
+      "forks": 1189,
+      "stars_this_week": 1809,
+      "built_by": [
+        "guillaumeboniface",
+        "lauramionel",
+        "kevin9327",
+        "Aliciawque",
+        "ShiroKSH"
+      ],
+      "source_page": "https://github.com/trending/javascript?since=weekly"
+    },
+    {
+      "rank": 36,
+      "repo": "citrolabs/ego-lite",
+      "url": "https://github.com/citrolabs/ego-lite",
+      "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
+      "language": "JavaScript",
+      "stars": 19428,
+      "forks": 1080,
+      "stars_this_week": 1784,
+      "built_by": [
+        "section9-lab",
+        "claude",
+        "aute",
+        "WUXM5",
+        "joway"
+      ],
+      "source_page": "https://github.com/trending/javascript?since=weekly"
+    },
+    {
+      "rank": 37,
+      "repo": "bannedbook/fanqiang",
+      "url": "https://github.com/bannedbook/fanqiang",
+      "description": "翻墙-科学上网",
+      "language": "Kotlin",
+      "stars": 55836,
+      "forks": 8685,
+      "stars_this_week": 1634,
+      "built_by": [
+        "bannedbook",
+        "crazyetiii"
+      ],
+      "source_page": "https://github.com/trending/kotlin?since=weekly"
+    },
+    {
+      "rank": 38,
+      "repo": "Kruk2/jasna",
+      "url": "https://github.com/Kruk2/jasna",
+      "description": "Video restoration tool",
+      "language": "Python",
+      "stars": 3673,
+      "forks": 286,
+      "stars_this_week": 1476,
+      "built_by": [
+        "Kruk2",
+        "suphamster",
+        "claude",
+        "helkaluin",
+        "ironicgitposting"
+      ],
+      "source_page": "https://github.com/trending/python?since=weekly"
+    },
+    {
+      "rank": 39,
+      "repo": "vxcontrol/pentagi",
+      "url": "https://github.com/vxcontrol/pentagi",
+      "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+      "language": "Go",
+      "stars": 32382,
+      "forks": 5030,
+      "stars_this_week": 1463,
+      "built_by": [
+        "sirozha",
+        "claude",
+        "asdek",
+        "mason5052",
+        "cursoragent"
+      ],
+      "source_page": "https://github.com/trending/go?since=weekly"
+    },
+    {
+      "rank": 40,
+      "repo": "lyogavin/airllm",
+      "url": "https://github.com/lyogavin/airllm",
+      "description": "AirLLM 2.8T LLM inference with single 4GB GPU",
+      "language": "Jupyter Notebook",
+      "stars": 40641,
+      "forks": 4143,
+      "stars_this_week": 1463,
+      "built_by": [
+        "lyogavin",
+        "cursoragent",
+        "eltociear",
+        "NavodPeiris",
+        "claude"
+      ],
+      "source_page": "https://github.com/trending/jupyter-notebook?since=weekly"
+    },
+    {
+      "rank": 41,
+      "repo": "ollama/ollama",
+      "url": "https://github.com/ollama/ollama",
+      "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+      "language": "Go",
+      "stars": 184735,
+      "forks": 18569,
+      "stars_this_week": 1434,
+      "built_by": [
+        "mxyng",
+        "dhiltgen",
+        "jmorganca",
+        "BruceMacD",
+        "jessegross"
+      ],
+      "source_page": "https://github.com/trending/go?since=weekly"
+    },
+    {
+      "rank": 42,
+      "repo": "basketikun/infinite-canvas",
+      "url": "https://github.com/basketikun/infinite-canvas",
+      "description": "面向 AI 创作的开源无限画布工作台，集成 AI 生图、参考图编辑、视频生成、Agent 智能助手、画布编排、对话创作、提示词库与素材管理等能力，支持可视化创作流程与多 Agent 协同工作。兼容 OpenAI 接口生态，支持 chatgpt2api、grok2api、flow2api、newapi 等渠道接入。",
+      "language": "TypeScript",
+      "stars": 9105,
+      "forks": 2131,
+      "stars_this_week": 1362,
+      "built_by": [
+        "basketikun",
+        "yukkcat",
+        "claude",
+        "stupid-h4er",
+        "Booome"
+      ],
+      "source_page": "https://github.com/trending/typescript?since=weekly"
+    },
+    {
+      "rank": 43,
+      "repo": "pollen-robotics/microduck",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "description": "A Tiny biped duck robot 🦆",
+      "language": "Rust",
+      "stars": 11427,
+      "forks": 1459,
+      "stars_this_week": 1263,
+      "built_by": [
+        "pierre-rouanet",
+        "apirrone",
+        "claude",
+        "Drenayaz",
+        "Nixxx19"
+      ],
+      "source_page": "https://github.com/trending/rust?since=weekly"
+    },
+    {
+      "rank": 44,
+      "repo": "ethanplusai/harvey",
+      "url": "https://github.com/ethanplusai/harvey",
+      "description": "Autonomous AI sales agent powered by Claude Code or Codex. Finds prospects, writes cold emails, sends campaigns, handles replies, books meetings. No API keys needed — runs on your Claude or Codex subscriptions.",
+      "language": "Python",
+      "stars": 2513,
+      "forks": 524,
+      "stars_this_week": 1249,
+      "built_by": [
+        "ethanplusai",
+        "claude",
+        "gabrielaoimevbore-beep",
+        "xiaoheiai4719-collab",
+        "tarizshahid"
+      ],
+      "source_page": "https://github.com/trending/python?since=weekly"
+    },
+    {
+      "rank": 45,
+      "repo": "php/php-src",
+      "url": "https://github.com/php/php-src",
+      "description": "The PHP Interpreter",
+      "language": "C",
+      "stars": 41657,
+      "forks": 8402,
+      "stars_this_week": 1245,
+      "built_by": [
+        "dstogov",
+        "nikic",
+        "weltling",
+        "cmb69",
+        "iliaal"
+      ],
+      "source_page": "https://github.com/trending/c?since=weekly"
+    },
+    {
+      "rank": 46,
+      "repo": "f/prompts.chat",
+      "url": "https://github.com/f/prompts.chat",
+      "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "language": "HTML",
+      "stars": 174501,
+      "forks": 22288,
+      "stars_this_week": 1236,
+      "built_by": [
+        "f",
+        "devisasari",
+        "giorgiop",
+        "sinansonmez",
+        "ersinkoc"
+      ],
+      "source_page": "https://github.com/trending/html?since=weekly"
+    },
+    {
+      "rank": 47,
+      "repo": "elie222/rakazo",
+      "url": "https://github.com/elie222/rakazo",
+      "description": "Open-source Grok Bot alternative. Choose your own model and sandbox.",
+      "language": "TypeScript",
+      "stars": 5727,
+      "forks": 1011,
+      "stars_this_week": 1166,
+      "built_by": [
+        "elie222",
+        "cursoragent",
+        "claude",
+        "fetw882",
+        "ald3b"
+      ],
+      "source_page": "https://github.com/trending/typescript?since=weekly"
+    },
+    {
+      "rank": 48,
+      "repo": "EpicGames/unreal-engine-skills-for-claude-code-plugin",
+      "url": "https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin",
+      "description": null,
+      "language": "Shell",
+      "stars": 1657,
+      "forks": 172,
+      "stars_this_week": 1098,
+      "built_by": [
+        "thomas-mansencal",
+        "nathanmartz"
+      ],
+      "source_page": "https://github.com/trending/shell?since=weekly"
+    },
+    {
+      "rank": 49,
+      "repo": "google-gemini/gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+      "language": "TypeScript",
+      "stars": 108372,
+      "forks": 14834,
+      "stars_this_week": 1078,
+      "built_by": [
+        "scidomino",
+        "jacob314",
+        "NTaylorMullen",
+        "abhipatel12",
+        "SandyTao520"
+      ],
+      "source_page": "https://github.com/trending/typescript?since=weekly"
+    },
+    {
+      "rank": 50,
+      "repo": "vercel-labs/skills",
+      "url": "https://github.com/vercel-labs/skills",
+      "description": "The open agent skills tool - npx skills",
+      "language": "TypeScript",
+      "stars": 36494,
+      "forks": 3144,
+      "stars_this_week": 1077,
+      "built_by": [
+        "quuu",
+        "github-actions",
+        "huozhi",
+        "claude",
+        "jonathanhefner"
+      ],
+      "source_page": "https://github.com/trending/typescript?since=weekly"
+    }
+  ]
+}
